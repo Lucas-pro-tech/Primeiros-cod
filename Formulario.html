@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" type= "text/css" href="estilo.css">
+    <Script type="text/javascript" src="./scrpit.js"></Script>
+    <style>
+        input{
+            width: 150px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        textarea{
+            width: 150px;
+            border: 1px solid blue;
+        }
+        burron{
+            width: 150px;
+            background-color: black;
+            color: white;
+        }
+        div{
+            border: 3px solid blue;
+            background-color: blue;
+            text-align: center;
+        }
+        h4{
+            text-align: center;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <Header>
+        <h4>Meu cabeçalho</h4>
+    </Header>
+
+    <div style=
+    "border: 3px solid blue; background-color: aquamarine;">
+        Nome<br>
+        <input type="text" name="Campo1:" id="Campo1">
+        <br> Data de Nascimento<br>
+        <input type="date" name="Campo2:" id="Campo2">
+        <br>
+        <p><button onclick="imprimir()"> Imprimir </button></p>
+        Resultado<br>
+        <textarea name="resultado" id="resultado" cols="20" rows="5"></textarea>
+    </div>
+
+    <footer>
+        <h4>Meu rodapé</h4>
+    </footer>
+
+    <script>
+        function imprimir(){
+            var nome = document.getElementById("Campo1")
+            var Nascimento = document.getElementById("Campo2")
+            var resultado = document.getElementById("resultado")
+
+            resultado.value = nome.value + " nasceu em " + Nascimento.value
+        }
+    </script>
+    
+</body>
+</html>
