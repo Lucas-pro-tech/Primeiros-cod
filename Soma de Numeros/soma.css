@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    /*variáveis*/
+    --bg-color: rgb(0, 0, 0);
+    --text-color: white;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+div{
+    text-align: center;
+    width: 200px;
+    margin: 10px auto;
+}
+footer{
+    opacity: 0.4;
+    transition: opacity 400ms;
+}
+footer:hover{
+    opacity: 1;
+}
+button{
+    height: 25px;
+    width: 200px;
+    background-color: rgb(41, 146, 72);
+    transition: background 400ms;
+    border-radius: 16px;
+}
+button:hover{
+    background: rgb(11, 75, 29);
+}
+input{
+    height: 30px;
+    width: 200px;
+    align-items: center;
+    margin-bottom: 16px;
+    color: var(--bg-color);
+    border-radius: 6px;
+}
