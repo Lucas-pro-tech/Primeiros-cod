@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 10px auto;
+}
+input{
+    height: 20px;
+    width: 200px;
+}
+button{
+    height: 20px;
+    width: 150px;
+    background-color: rgb(21, 189, 119);
+    transition: 400ms;
+    border-radius: 16px;
+}
+button:hover{
+    background-color: rgb(128, 255, 156);
+}
+div{
+    text-align: center;
+    width: 200px;
+    margin: 10px auto;
+}
+header{
+    text-align: center;
+}
